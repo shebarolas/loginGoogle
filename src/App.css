@@ -1,38 +1,201 @@
-.App {
+body{
+  margin : 0;
+}
+.navBar{
+  height: 5rem;
+  background-color:violet;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  align-items: center;
+}
+.listItem {
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+.avatar{
+  border-radius: 50%;
+  width:3rem;
+  height:3rem;
+  object-fit: cover;
+}
+.logo{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.home{
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  justify-items: center;
+}
+.card{
+  width: 20rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  border-radius: .3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img{
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  margin-top:1rem;
+}
+.btn{
+  cursor: pointer;
+  border-radius: .3rem;
+  padding: .4rem .5rem;
+  border: 1px solid purple;
+  background-color: purple;
+  color: white;
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.readMore{
+  text-align: center;
+}
+
+.readMoreImg{
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+.login{
+  width: 100%;
+  height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+ 
+}
+.options{
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  align-items: center;
+  justify-items: center;
+  gap: 10rem;
+  padding: 6rem;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.4);
+  border-radius: .3rem;
+  background-color: violet;
+
+}
+.imgBtn{
+  height: 3rem;
+}
+.right{
+  display: grid;
+  gap: 2rem;
+}
+.left{
+  display: grid;
+  gap: 1rem;
+}
+.text{
+  padding: .4rem;
+  border-radius: .5rem;
+}
+.btnLogin{
+  padding: .4rem;
+  border-radius: .5rem;
+}
+.or{
+  border-radius: 50%;
+  background-color: violet;
+  padding: 1rem;
+  font-size: 1rem;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.4);
+}
+.textOr{
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.facebookBtn{
+  background-color: #3b5998;
+  padding-right: 5rem;
+  padding-bottom: .3rem;
+  padding-top: .3rem;
   color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+.githubBtn{
+  background-color:gray;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-right: 5rem;
+  cursor: pointer;
+  padding-bottom: .3rem;
+  padding-top: .3rem;
+  border-radius: .3rem;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+.googleBtn {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: back;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  padding-right: 5rem;
+  cursor: pointer;
+  padding-bottom: .3rem;
+  padding-top: .3rem;
+  border-radius: .3rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.text:focus{
+  outline: none;
+}
+.text{
+  padding: 1rem;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2)
+}
+.btnLogin{
+  padding: 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.4);
+  background-color: rgb(241, 130, 241);
+}
+.textInitial{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link{
+  text-decoration:none;
+  color:inherit;
 }
