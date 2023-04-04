@@ -39,7 +39,7 @@ const App = () => {
 
     try {
       
-      const resp = await fetch('http://localhost:9000/auth/login/success', {
+      const resp = await fetch(`${process.env.REACT_APP_API}/auth/login/success`, {
         method: 'GET',
         credentials: "include",
         headers: {

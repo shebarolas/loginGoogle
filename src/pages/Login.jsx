@@ -3,8 +3,12 @@ import Facebook from '../images/facebook.png';
 import Github from '../images/github.png';
 export default function Login() {
 
+    const api = process.env.REACT_APP_API;
+    const hola = process.env.hola;
+    console.log(api);
+
     const google = () => {
-        window.open("http://localhost:9000/auth/google", "_self");
+        window.open( `${api}/auth/google`, "_self");
     }
     const facebook = () => {
         window.open("http://localhost:9000/auth/facebook", "_self");
