@@ -12,6 +12,7 @@ export default function Login() {
     }
     const facebook = () => {
         window.open("http://localhost:9000/auth/facebook", "_self");
+        
     }
 
 
