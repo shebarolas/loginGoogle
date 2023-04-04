@@ -8,7 +8,7 @@ export default function Login() {
     console.log(api);
 
     const google = () => {
-        window.open( `http://localhost:3000/auth/google`, "_self");
+        window.open( `https://versed-fresh-jumpsuit.glitch.me/auth/google`, "_self");
     }
     const facebook = () => {
         window.open("http://localhost:9000/auth/facebook", "_self");
