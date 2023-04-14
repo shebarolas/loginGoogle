@@ -39,7 +39,7 @@ const App = () => {
 
     try {
       
-      const resp = await fetch(`https://versed-fresh-jumpsuit.glitch.me/auth/login/success`, {
+      const resp = await fetch('https://versed-fresh-jumpsuit.glitch.me/auth/login/success', {
         method: 'GET',
         credentials: "include",
         headers: {
